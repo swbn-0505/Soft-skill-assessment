@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills Assessment Quiz</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Discover Your Ideal Career Path</h1>
+            <p>Take our Soft Skills Assessment Quiz to understand your strengths and find out which career type aligns
+                best with your unique skills. Let's get started!</p>
+        </header>
+        <form action="/result" method="post" class="quiz-form">
+            <!-- Communication Skills -->
+            <div class="form-group">
+                <label for="communication">1. How do you rate your communication skills?</label>
+                <input type="radio" name="communication" value="2"> I am confident in expressing my ideas clearly.
+                <br>
+                <input type="radio" name="communication" value="1"> I communicate well, but sometimes find it
+                challenging to be concise.
+                <br>
+                <input type="radio" name="communication" value="0"> I find it difficult to communicate my thoughts
+                effectively.
+                <br><br>
+            </div>
+
+            <!-- Teamwork -->
+            <div class="form-group">
+                <label for="teamwork">2. How do you feel about working in a team?</label>
+                <input type="radio" name="teamwork" value="2"> I thrive in team environments and actively contribute.
+                <br>
+                <input type="radio" name="teamwork" value="1"> I work well in teams, but I sometimes prefer working
+                alone.
+                <br>
+                <input type="radio" name="teamwork" value="0"> I prefer to work independently and avoid team settings.
+                <br><br>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="form-group">
+                <label for="problem_solving">3. How would you describe your problem-solving skills?</label>
+                <input type="radio" name="problem_solving" value="2"> I enjoy tackling problems and often find creative
+                solutions.
+                <br>
+                <input type="radio" name="problem_solving" value="1"> I solve problems when needed but don’t
+                particularly enjoy it.
+                <br>
+                <input type="radio" name="problem_solving" value="0"> I struggle with solving problems and feel anxious
+                when faced with them.
+                <br><br>
+            </div>
+
+            <!-- Leadership -->
+            <div class="form-group">
+                <label for="leadership">4. How would you describe your leadership style?</label>
+                <input type="radio" name="leadership" value="2"> I naturally take charge and inspire others to follow my
+                lead.
+                <br>
+                <input type="radio" name="leadership" value="1"> I can lead when necessary but prefer to follow or
+                support others.
+                <br>
+                <input type="radio" name="leadership" value="0"> I feel uncomfortable taking on leadership roles.
+                <br><br>
+            </div>
+
+            <!-- Adaptability -->
+            <div class="form-group">
+                <label for="adaptability">5. How do you handle change or unexpected situations?</label>
+                <input type="radio" name="adaptability" value="2"> I easily adapt to new situations and remain calm
+                under pressure.
+                <br>
+                <input type="radio" name="adaptability" value="1"> I adapt eventually, but it takes me some time to
+                adjust.
+                <br>
+                <input type="radio" name="adaptability" value="0"> I find change stressful and prefer consistent
+                routines.
+                <br><br>
+            </div>
+
+            <!-- Emotional Intelligence -->
+            <div class="form-group">
+                <label for="emotional_intelligence">6. How do you typically handle stressful situations?</label>
+                <input type="radio" name="emotional_intelligence" value="2"> I pause, assess my emotions, and develop a
+                plan to manage the stress.
+                <br>
+                <input type="radio" name="emotional_intelligence" value="1"> I try to stay calm, but sometimes I react
+                emotionally.
+                <br>
+                <input type="radio" name="emotional_intelligence" value="0"> I often feel overwhelmed and struggle to
+                control my reactions.
+                <br><br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
